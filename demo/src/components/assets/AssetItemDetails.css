@@ -1,0 +1,9 @@
+.assets-item {
+  list-style: none;
+  padding: 0;
+}
+
+.assets-item__fallback {
+  color: white;
+  text-align: center;
+}

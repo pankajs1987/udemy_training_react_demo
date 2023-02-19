@@ -1,0 +1,39 @@
+{
+  "customers": {
+    "-NNqdvtxmcyWSGLXOqjo": {
+      "newAsset": {
+        "amount": "25000",
+        "customerName": "demo1",
+        "dateIn": "2023-12-22T00:00:00.000Z",
+        "goldWeight": "2.5",
+        "key": 6.079730860742383,
+        "rateofInterest": "1.25",
+        "silverWeight": "256"
+      }
+    }
+  },
+  "customers_new": {
+    "-NNh0I7wc4bJ6Dhx7WZ6": {
+      "newAsset": {
+        "amount": "12000",
+        "customerName": "Pankaj Sharma",
+        "dateIn": "2023-12-12T00:00:00.000Z",
+        "goldWeight": "28",
+        "key": 91.88704541484915,
+        "rateofInterest": "1.28",
+        "silverWeight": "36"
+      }
+    },
+    "-NNqhhjzPbUfcsV5Ygk0": {
+      "newAsset": {
+        "amount": "2500000",
+        "customerName": "Keshav",
+        "dateIn": "2023-12-12T00:00:00.000Z",
+        "goldWeight": "79.8",
+        "key": 59.285027582685366,
+        "rateofInterest": "1.4",
+        "silverWeight": "256"
+      }
+    }
+  }
+}
