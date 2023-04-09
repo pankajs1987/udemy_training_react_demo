@@ -4,6 +4,14 @@
   overflow: auto;
 }
 
+.selectbox_label {
+  width: 12rem;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
 .control {
   margin-bottom: 0.5rem;
 }

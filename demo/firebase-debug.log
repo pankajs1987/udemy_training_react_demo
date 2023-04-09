@@ -1,0 +1,72 @@
+[debug] [2023-02-19T08:04:24.493Z] ----------------------------------------------------------------------
+[debug] [2023-02-19T08:04:24.495Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2023-02-19T08:04:24.495Z] CLI Version:   11.23.1
+[debug] [2023-02-19T08:04:24.495Z] Platform:      win32
+[debug] [2023-02-19T08:04:24.495Z] Node Version:  v16.17.0
+[debug] [2023-02-19T08:04:24.496Z] Time:          Sun Feb 19 2023 13:34:24 GMT+0530 (India Standard Time)
+[debug] [2023-02-19T08:04:24.496Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-19T08:04:24.550Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-19T08:04:24.551Z] > authorizing via signed-in user (pankajtmimt2008@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\ws\udemy_training_react_demo\demo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-19T08:04:31.210Z] Using project from CLI flag: dailytransactions
+[debug] [2023-02-19T08:04:31.212Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dailytransactions [none]
+[debug] [2023-02-19T08:04:31.998Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dailytransactions 200
+[debug] [2023-02-19T08:04:31.998Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dailytransactions {"projectId":"dailytransactions","projectNumber":"334728510131","displayName":"dailytransaction","name":"projects/dailytransactions","resources":{"hostingSite":"dailytransactions","realtimeDatabaseInstance":"dailytransactions-default-rtdb"},"state":"ACTIVE","etag":"1_6491e681-1897-4356-ad49-e1cd5f4505ea"}
+[info] i  Using project dailytransactions (dailytransaction) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at D:\ws\udemy_training_react_demo 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=130844209&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-02-19T08:04:32.707Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-02-19T08:04:32.707Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-02-19T08:04:33.190Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-02-19T08:04:33.191Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-02-19T08:04:33.198Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-02-19T08:04:33.651Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-02-19T08:04:33.652Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"pankajs1987","id":19229377,"node_id":"MDQ6VXNlcjE5MjI5Mzc3","avatar_url":"https://avatars.githubusercontent.com/u/19229377?v=4","gravatar_id":"","url":"https://api.github.com/users/pankajs1987","html_url":"https://github.com/pankajs1987","followers_url":"https://api.github.com/users/pankajs1987/followers","following_url":"https://api.github.com/users/pankajs1987/following{/other_user}","gists_url":"https://api.github.com/users/pankajs1987/gists{/gist_id}","starred_url":"https://api.github.com/users/pankajs1987/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pankajs1987/subscriptions","organizations_url":"https://api.github.com/users/pankajs1987/orgs","repos_url":"https://api.github.com/users/pankajs1987/repos","events_url":"https://api.github.com/users/pankajs1987/events{/privacy}","received_events_url":"https://api.github.com/users/pankajs1987/received_events","type":"User","site_admin":false,"name":"Pankaj Sharma","company":"ibm","blog":"https://www.linkedin.com/in/panksjavadeveloper/","location":"India","email":null,"hireable":true,"bio":"echnology/Solutions lead and an avid developer with more than 7 Years of experience in conceptualization, analysis, design and development of solutions","twitter_username":null,"public_repos":9,"public_gists":1,"followers":0,"following":0,"created_at":"2016-05-06T18:33:55Z","updated_at":"2023-02-19T07:19:26Z","private_gists":0,"total_private_repos":4,"owned_private_repos":4,"disk_usage":12362,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as pankajs1987 
+[info] 
+[debug] [2023-02-19T08:04:37.950Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-19T08:04:38.404Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-19T08:04:38.404Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-19T08:04:38.506Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-19T08:04:38.707Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-19T08:04:38.887Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-19T08:04:38.887Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-19T08:04:38.894Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-19T08:04:39.081Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-19T08:04:39.097Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-19T08:04:39.097Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-19T08:04:39.275Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-19T08:04:39.275Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-19T08:04:39.519Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-19T08:04:39.519Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
