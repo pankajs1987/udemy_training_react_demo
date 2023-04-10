@@ -16,14 +16,17 @@ const headCells = [
   { id: "amount", label: "Amount Invested" },
   { id: "rateofInterest", label: "Rate of Interest" },
   { id: "goldWeight", label: "Gold Weight" },
+  { id: "goldAmount", label: "Gold Amount" },
   { id: "silverWeight", label: "Silver Weight" },
+  { id: "silverAmount", label: "Silver Amount" },
+  { id: "totalAmount", label: "Total Assets Cost" },
   { id: "actions", label: "Actions", disableSorting: true },
 ];
 
 const useStyles = makeStyles((theme) => ({
   newButton: {
     position: "absolute",
-    top: '277px',
+    top: "277px",
     right: "68px",
   },
 }));
@@ -36,15 +39,23 @@ const AssetItems = (props) => {
       return items;
     },
   });
-  const [records, setRecords] = useState(props.assets);
   const [openPopup, setOpenPopup] = useState(false);
   const [recordForEdit, setRecordForEdit] = useState(null);
   const { TblContainer, TblHead, TblPagination, recordsAfterPagingAndSorting } =
-    useTable(records, headCells, filterFn);
+    useTable(props.assets, headCells, filterFn);
   const openInPopup = (item) => {
     setRecordForEdit(item);
     setOpenPopup(true);
   };
+
+  for (const key in props.assets) {
+    console.log("Printing Assets in AssetItems : " + props.assets[key]);
+  }
+
+  const handleSubmitClick = ()=>{
+    setOpenPopup(false)
+  }
+
   return (
     <>
       <Controls.Button
@@ -70,7 +81,10 @@ const AssetItems = (props) => {
               <TableCell>{item.amount}</TableCell>
               <TableCell>{item.rateofInterest}</TableCell>
               <TableCell>{item.goldWeight}</TableCell>
+              <TableCell>{item.goldAmount}</TableCell>
               <TableCell>{item.silverWeight}</TableCell>
+              <TableCell>{item.silverAmount}</TableCell>
+              <TableCell>{item.silverAmount + item.goldAmount}</TableCell>
               <TableCell>
                 <ActionButton
                   color="primary"
@@ -90,11 +104,15 @@ const AssetItems = (props) => {
       </TblContainer>
       <TblPagination />
       <Popup
-        title= {recordForEdit ?'Edit Asset Details':'Add Asset Details'}
+        title={recordForEdit ? "Edit Asset Details" : "Add Asset Details"}
         openPopup={openPopup}
         setOpenPopup={setOpenPopup}
       >
-        <AddAssets roi={props.roi} saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler} recordForEdit={recordForEdit} />
+        <AddAssets goldRates= {props.goldRates} silverRates={props.silverRates}
+          roi={props.roi} handleSubmitClick={handleSubmitClick}
+          saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler}
+          recordForEdit={recordForEdit}
+        />
       </Popup>
     </>
   );

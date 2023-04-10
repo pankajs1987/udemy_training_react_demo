@@ -1,4 +1,3 @@
-import AddAssets from "./AddAssets";
 import AssetItems from "./AssetItems";
 
 function AssetItemDetails(props) {
@@ -7,7 +6,8 @@ function AssetItemDetails(props) {
   
   return (
     <div >
-      {assets ? <AssetItems assets={assets} roi={roi} saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler} openPopup = {props.openPopup}/> : "No Record Found"}</div>
+      {/* {assets ? <AssetItems assets={assets} roi={roi} saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler} /> : "No Record Found"}</div> */}
+      <AssetItems assets={assets} roi={roi} saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler} goldRates={props.goldRates} silverRates={props.silverRates} /></div>
   );
 }
 

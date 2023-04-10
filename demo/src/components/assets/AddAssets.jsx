@@ -50,8 +50,7 @@
 //     valueChangeHandler: enteredDateChangeHandler,
 //     reset: resetEnteredDateInput,
 //   } = useInput((value) => value !== "");
-  
-  
+
 //   //Validate Silver Weight
 //   const {
 //     value: enteredSilverWeight,
@@ -62,7 +61,6 @@
 //     reset: resetenteredSilverWeightInput,
 //   } = useInput(isNotEmpty);
 
-  
 //   let formIsValid = false;
 //     if (
 //     enteredCustomerNameIsValid &&
@@ -82,7 +80,6 @@
 //       setEnteredrateOfInterestHasError(true);
 //       setenteredrateOfInterestIsValid(false);
 
-
 //     }
 //     const  handleCallBack =(selectedValue)=>{
 //       resetenteredrateOfInterestInput();
@@ -97,23 +94,22 @@
 //       //setEnteredrateOfInterest(selectedValue.target.value);
 //       setEnteredrateOfInterestHasError(false);
 //       setenteredrateOfInterestIsValid(true);
-      
+
 //     }
-    
-  
+
 //     const submitHandler = (event) => {
 //     event.preventDefault();
 //     if (
 //       enteredCustomerNameHasError ||
 //       enteredAmountHasError ||
-//       enteredrateOfInterestHasError || 
+//       enteredrateOfInterestHasError ||
 //       enteredgoldWeightHasError ||
 //       enteredSilverWeightHasError
 
 //     )
 //       return;
 //    // props.onAddToCart(enteredAmountNumber);
-  
+
 //    const assetData = {
 //       key:Math.random()*100,
 //       customerName: enteredCustomerName,
@@ -214,129 +210,141 @@
 
 //export default AddAssets;
 
-
-import React, {  useEffect } from 'react'
-import { Grid, } from '@material-ui/core';
+import React, { useEffect } from "react";
+import { Grid } from "@material-ui/core";
 import Controls from "../common/Controls";
-import { useForm, Form } from '../useForm';
-
+import { useForm, Form } from "../useForm";
 
 const initialFValues = {
-    key: '',
-    customerName: '',
-    dateIn:new Date(),
-    amount: 0,
-    goldWeight: 0,
-    silverWeight: 0,
-    rateofInterest: 0,
-    
-}
+  key: "",
+  customerName: "",
+  dateIn: new Date(),
+  amount: 0,
+  goldWeight: 0,
+  silverWeight: 0,
+  rateofInterest: 0,
+  silverPercentage: 0,
+  goldPercentage: 0,
+};
 
 export default function AddAssets(props) {
-    const { addOrEdit, recordForEdit } = props
+  const { addOrEdit, recordForEdit } = props;
 
-    const validate = (fieldValues = values) => {
-       
-         let temp = { ...errors }
-        if ('amount' in fieldValues)
-            temp.amount = fieldValues.amount > 0 ? "" : "Amount Should be greater then 0."
-        if ('rateofInterest' in fieldValues)
-            temp.rateofInterest = fieldValues.rateofInterest > 0 ? "" : "This field is required."
-        setErrors({
-            ...temp
-        })
+  const validate = (fieldValues = values) => {
+    let temp = { ...errors };
+    if ("amount" in fieldValues)
+      temp.amount =
+        fieldValues.amount > 0 ? "" : "Amount Should be greater then 0.";
+    if ("rateofInterest" in fieldValues)
+      temp.rateofInterest =
+        fieldValues.rateofInterest > 0 ? "" : "This field is required.";
+    setErrors({
+      ...temp,
+    });
 
-        if (fieldValues == values)
-            return Object.values(temp).every(x => x == "")
+    if (fieldValues == values) return Object.values(temp).every((x) => x == "");
+  };
+
+  const { values, setValues, errors, setErrors, handleInputChange, resetForm } =
+    useForm(initialFValues, true, validate);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      props.saveOrUpdateAssetHandler(values, resetForm);
     }
+  };
 
-    const {
-        values,
-        setValues,
-        errors,
-        setErrors,
-        handleInputChange,
-        resetForm
-    } = useForm(initialFValues, true, validate);
+  useEffect(() => {
+    console.log(recordForEdit);
+    if (recordForEdit != null)
+      setValues({
+        ...recordForEdit,
+      });
+  }, [recordForEdit]);
 
-    const handleSubmit = e => {
-        e.preventDefault()
-        if (validate()) {
-            props.saveOrUpdateAssetHandler(values, resetForm);
-        }
-    }
+  return (
+    <Form onSubmit={handleSubmit}>
+      <Grid container>
+        <Grid item xs={6}>
+          <Controls.Input
+            name="customerName"
+            label="Customer Name"
+            value={values.customerName}
+            onChange={handleInputChange}
+            error={errors.customerName}
+          />
 
-    useEffect(() => {
-        console.log(recordForEdit);
-        if (recordForEdit != null)
-            setValues({
-                ...recordForEdit
-            })
-    }, [recordForEdit])
+          <Controls.DatePicker
+            name="dateIn"
+            label="Transaction Date"
+            value={values.dateIn}
+            onChange={handleInputChange}
+          />
+          <Controls.Input
+            name="amount"
+            label="Transaction Amount"
+            value={values.amount}
+            onChange={handleInputChange}
+            error={errors.amount}
+          />
+          <Controls.Input
+            name="goldWeight"
+            label="Gold Weight"
+            value={values.goldWeight}
+            onChange={handleInputChange}
+            error={errors.goldWeight}
+          />
+          <Controls.Input
+            name="goldPercentage"
+            label="Gold Percentage"
+            value={values.goldPercentage}
+            onChange={handleInputChange}
+            error={errors.goldPercentage}
+          />
+          <Controls.Input
+            label="Silver Weight"
+            name="silverWeight"
+            value={values.silverWeight}
+            onChange={handleInputChange}
+            error={errors.silverWeight}
+          />
 
-    return (
-        <Form onSubmit={handleSubmit}>
-            <Grid container>
-                <Grid item xs={6}>
-                    <Controls.Input
-                        name="customerName"
-                        label="Customer Name"
-                        value={values.customerName}
-                        onChange={handleInputChange}
-                        error={errors.customerName}
-                    />
-                    
-                    <Controls.DatePicker
-                        name="dateIn"
-                        label="Transaction Date"
-                        value={values.dateIn}
-                        onChange={handleInputChange}
-                    />
-                    <Controls.Input
-                        name="amount"
-                        label="Transaction Amount"
-                        value={values.amount}
-                        onChange={handleInputChange}
-                        error={errors.amount}
-                    />
-                      <Controls.Input
-                        name="goldWeight"
-                        label="Gold Weight"
-                        value={values.goldWeight}
-                        onChange={handleInputChange}
-                        error={errors.goldWeight}
-                    />
-                      <Controls.Input
-                        label="Silver Weight"
-                        name="silverWeight"
-                        value={values.silverWeight}
-                        onChange={handleInputChange}
-                        error={errors.silverWeight}
-                    />
+          <Controls.Input
+            label="Silver Percentage"
+            name="silverPercentage"
+            value={values.silverPercentage}
+            onChange={handleInputChange}
+            error={errors.silverPercentage}
+          />
+        </Grid>
+        <Grid>
+          <Controls.Select
+            name="rateofInterest"
+            label="Rate of Interest"
+            value={values.roi}
+            onChange={handleInputChange}
+            options={props.roi}
+            error={errors.roi}
+          />
 
-                </Grid>
-                    <Controls.Select
-                        name="rateofInterest"
-                        label="Rate of Interest"
-                        value={values.roi}
-                        onChange={handleInputChange}
-                        options={props.roi}
-                        error={errors.roi}
-                    />
-                
+          <div>
+            <Controls.Button
+              type="submit"
+              text="Submit"
+              onClick={props.handleSubmitClick}
+            />
+            <Controls.Button text="Reset" color="default" onClick={resetForm} />
+          </div>
+        </Grid>
 
-                    <div>
-                        <Controls.Button
-                            type="submit"
-                            text="Submit" />
-                        <Controls.Button
-                            text="Reset"
-                            color="default"
-                            onClick={resetForm} />
-                    </div>
-                </Grid>
-            
-        </Form>
-    )
+        <Grid>
+          <div>Calculations : 
+            <p>Gold Rates : {props.goldRates}</p>
+            <p>Silver Rates : {props.silverRates}</p>
+            </div>
+        </Grid>
+      </Grid>
+    </Form>
+  );
 }
-
