@@ -13,13 +13,11 @@ import { makeStyles } from "@material-ui/core";
 const headCells = [
   { id: "dateIn", label: "Transaction Date" },
   { id: "customerName", label: "Customer Name" },
-  { id: "amount", label: "Amount Invested" },
+  { id: "amount", label: "Investment" },
   { id: "rateofInterest", label: "Rate of Interest" },
-  { id: "goldWeight", label: "Gold Weight" },
-  { id: "goldAmount", label: "Gold Amount" },
-  { id: "silverWeight", label: "Silver Weight" },
-  { id: "silverAmount", label: "Silver Amount" },
-  { id: "totalAmount", label: "Total Assets Cost" },
+  { id: "goldWeight", label: "Gold Details" },
+  { id: "silverWeight", label: "Silver Details" },
+  { id: "totalAmount", label: "Today's Cost" },
   { id: "actions", label: "Actions", disableSorting: true },
 ];
 
@@ -39,6 +37,7 @@ const AssetItems = (props) => {
       return items;
     },
   });
+
   const [openPopup, setOpenPopup] = useState(false);
   const [recordForEdit, setRecordForEdit] = useState(null);
   const { TblContainer, TblHead, TblPagination, recordsAfterPagingAndSorting } =
@@ -48,13 +47,13 @@ const AssetItems = (props) => {
     setOpenPopup(true);
   };
 
-  for (const key in props.assets) {
-    console.log("Printing Assets in AssetItems : " + props.assets[key]);
-  }
+  // for (const key in props.assets) {
+  //   console.log("Printing Assets in AssetItems : " + props.assets[key].json);
+  // }
 
-  const handleSubmitClick = ()=>{
-    setOpenPopup(false)
-  }
+  const handleSubmitClick = () => {
+    setOpenPopup(false);
+  };
 
   return (
     <>
@@ -78,13 +77,53 @@ const AssetItems = (props) => {
                 <DateComponent date={new Date(item.dateIn)}></DateComponent>
               </TableCell>
               <TableCell>{item.customerName}</TableCell>
-              <TableCell>{item.amount}</TableCell>
-              <TableCell>{item.rateofInterest}</TableCell>
-              <TableCell>{item.goldWeight}</TableCell>
-              <TableCell>{item.goldAmount}</TableCell>
-              <TableCell>{item.silverWeight}</TableCell>
-              <TableCell>{item.silverAmount}</TableCell>
-              <TableCell>{item.silverAmount + item.goldAmount}</TableCell>
+              <TableCell>
+                <ul>
+                  <li>Amount : {item.amount}</li>
+                  <li>Interest : {item.interest} </li>
+                  <li>Total : {Number(item.interest)+Number(item.amount)} </li>
+                </ul>
+              </TableCell>
+              <TableCell>{item.rateofInterest}%</TableCell>
+              <TableCell>
+                <ul>
+                  <li>Weight : {item.goldWeight} gm</li>
+                  <li>
+                    Amount : {Math.round(
+                      (item.goldWeight *
+                        (item.goldPercentage = item.goldPercentage
+                          ? item.goldPercentage
+                          : 1)) *
+                        props.goldRates 
+                    ) / 100}
+                  </li>
+                  {item.goldPercentage && (
+                    <li>Purity: {item.goldPercentage} %</li>
+                  )}
+                </ul>
+              </TableCell>
+
+              <TableCell>
+                <ul>
+                  <li>Weight : {item.silverWeight} gm</li>
+                  <li>
+                  Amount : {Math.round(
+                      (item.silverWeight *
+                        (item.silverPercentage = item.silverPercentage
+                          ? item.silverPercentage
+                          : 1)) *
+                        props.silverRates
+                    ) / 100}
+                  </li>
+                  {item.silverPercentage && (
+                    <li>Purity: {item.silverPercentage} %</li>
+                  )}
+                </ul>
+              </TableCell>
+              <TableCell>
+                {item.silverWeight * props.silverRates +
+                  item.goldWeight * props.goldRates}
+              </TableCell>
               <TableCell>
                 <ActionButton
                   color="primary"
@@ -108,8 +147,11 @@ const AssetItems = (props) => {
         openPopup={openPopup}
         setOpenPopup={setOpenPopup}
       >
-        <AddAssets goldRates= {props.goldRates} silverRates={props.silverRates}
-          roi={props.roi} handleSubmitClick={handleSubmitClick}
+        <AddAssets
+          goldRates={props.goldRates}
+          silverRates={props.silverRates}
+          roi={props.roi}
+          handleSubmitClick={handleSubmitClick}
           saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler}
           recordForEdit={recordForEdit}
         />

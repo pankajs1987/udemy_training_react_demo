@@ -3,16 +3,10 @@ import AssetItemDetails from "./AssetItemDetails";
 import { useEffect } from "react";
 import Loader from "../UI/Loader";
 
-import {
-  Paper,
-  makeStyles,
-  Toolbar,
-  InputAdornment,
-} from "@material-ui/core";
+import { Paper, makeStyles, Toolbar, InputAdornment } from "@material-ui/core";
 
 import { Search } from "@mui/icons-material";
 import Input from "../common/Input";
-
 
 const useStyles = makeStyles((theme) => ({
   pageContent: {
@@ -41,8 +35,8 @@ const Assets = (props) => {
   const [showAddAssets, setShowAddAssets] = useState(false);
   const [isLoading, setisLoading] = useState(true);
   const [filterFn, setFilterFn] = useState({
-    fn: (items) => {
-      return items;
+    fn: (values) => {
+      return values;
     },
   });
 
@@ -53,12 +47,17 @@ const Assets = (props) => {
     console.log(e.target.value);
     let target = e.target;
     setFilterFn({
-      fn: (items) => {
-        if (target.value == "") return items;
-        else
-          return items.filter((x) =>
+      fn: (values) => {
+        if (target.value == "") return values;
+        else {
+          const updatedAssets = assets.filter((x) =>
             x.customerName.toLowerCase().includes(target.value)
           );
+          setAssets(updatedAssets);
+        }
+        return assets.filter((x) =>
+          x.customerName.toLowerCase().includes(target.value)
+        );
       },
     });
   };
@@ -68,11 +67,7 @@ const Assets = (props) => {
       const response = await fetch(
         "https://dailytransactions-99473-default-rtdb.firebaseio.com/ROI.json"
       );
-      if (!response.ok) {
-        throw new Error("Not able to fetch Rate of Inetrest details");
-      }
       const responseData = await response.json();
-      console.log(responseData)
       const roi = [];
       for (const key in responseData) {
         roi.push({
@@ -94,12 +89,10 @@ const Assets = (props) => {
         throw new Error("Not able to fetch Rate of Inetrest details");
       }
       const responseData = await response.json();
-      
-      const roi = [];
-      setSilverRates(responseData['silverRates']);
-      setGoldRates(responseData['goldRates']);
-  
-      console.log("fetching gold rate : "+goldRates)
+      setSilverRates(responseData["silverRates"]);
+      setGoldRates(responseData["goldRates"]);
+
+      console.log("fetching gold rate : " + goldRates);
     };
     fetchGoldAndSilverRates().catch((error) => {
       sethttpError("Not able to fetch Intrest details" + error);
@@ -114,10 +107,13 @@ const Assets = (props) => {
       }
       const responseData = await response.json();
       const customerDetailsObj = [];
+      const customerDetailsCompletedObj = [];
       let totalGoldTemp = 0;
       let totalSilverTemp = 0;
       let totalInvestmentTemp = 0;
       for (const key in responseData) {
+        let now = new Date();
+        const {yearDiff,monthDiff,dayDiff} = splitDateToYearMonthAndDays(new Date(responseData[key].newAsset.dateIn),now);
         totalGoldTemp =
           Number(totalGoldTemp) + Number(responseData[key].newAsset.goldWeight);
         totalSilverTemp =
@@ -126,17 +122,37 @@ const Assets = (props) => {
         totalInvestmentTemp =
           Number(totalInvestmentTemp) +
           Number(responseData[key].newAsset.amount);
+          let totalAmountToRecover = ((yearDiff*12)+monthDiff+(dayDiff/(new Date(now.getFullYear(), now.getMonth()+1, 0).getDate()))*(Number(responseData[key].newAsset.rateofInterest)/100)*(Number(responseData[key].newAsset.amount)));
+          if(responseData[key].newAsset.customerStatus && responseData[key].newAsset.customerStatus ==='done'){
+            customerDetailsCompletedObj.push({
+              key: key,
+              customerName: responseData[key].newAsset.customerName,
+              amount: responseData[key].newAsset.amount,
+              rateofInterest: responseData[key].newAsset.rateofInterest,
+              goldWeight: responseData[key].newAsset.goldWeight,
+              silverWeight: responseData[key].newAsset.silverWeight,
+              dateIn: responseData[key].newAsset.dateIn,
+              goldPercentage: responseData[key].newAsset.goldPercentage,
+              silverPercentage: responseData[key].newAsset.silverPercentage,
+              interest: totalAmountToRecover,
+              status: responseData[key].newAsset.customerStatus,
+              
+            });
+          }else{
         customerDetailsObj.push({
           key: key,
           customerName: responseData[key].newAsset.customerName,
           amount: responseData[key].newAsset.amount,
           rateofInterest: responseData[key].newAsset.rateofInterest,
           goldWeight: responseData[key].newAsset.goldWeight,
-          goldAmount: ((Number(responseData[key].newAsset.goldWeight)*goldRates*70)/100),
           silverWeight: responseData[key].newAsset.silverWeight,
-          silverAmount: ((Number(responseData[key].newAsset.silverWeight)*silverRates*50)/100),
           dateIn: responseData[key].newAsset.dateIn,
+          goldPercentage: responseData[key].newAsset.goldPercentage,
+          silverPercentage: responseData[key].newAsset.silverPercentage,
+          interest: Math.round((totalAmountToRecover) * 100) / 100,
+          status: responseData[key].newAsset.customerStatus
         });
+      }
       }
       setTotalGold(totalGoldTemp);
       setTotalSilver(totalSilverTemp);
@@ -162,12 +178,57 @@ const Assets = (props) => {
       return <Loader />;
     }
   }
+  function splitDateToYearMonthAndDays (startingDate, endingDate) {
+    let startDate = new Date(
+      new Date(startingDate).toISOString().substr(0, 10)
+    );
+    if (!endingDate) {
+      endingDate = new Date().toISOString().substr(0, 10); // need date in YYYY-MM-DD format
+    }
+    let endDate = new Date(endingDate);
+    if (startDate > endDate) {
+      const swap = startDate;
+      startDate = endDate;
+      endDate = swap;
+    }
+    const startYear = startDate.getFullYear();
+    const february =
+      (startYear % 4 === 0 && startYear % 100 !== 0) || startYear % 400 === 0
+        ? 29
+        : 28;
+    const daysInMonth = [31, february, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+    let yearDiff = endDate.getFullYear() - startYear;
+    let monthDiff = endDate.getMonth() - startDate.getMonth();
+    if (monthDiff < 0) {
+      yearDiff--;
+      monthDiff += 12;
+    }
+    let dayDiff = endDate.getDate() - startDate.getDate();
+    if (dayDiff < 0) {
+      if (monthDiff > 0) {
+        monthDiff--;
+      } else {
+        yearDiff--;
+        monthDiff = 11;
+      }
+      dayDiff += daysInMonth[startDate.getMonth()];
+    }
+
+    return {yearDiff , monthDiff , dayDiff };
+  };
+
+
+
   const saveOrUpdateAssetHandler = (newAsset) => {
-     if (newAsset && newAsset.key) {
+
+    if (newAsset && newAsset.key) {
       fetch(
-        "https://dailytransactions-99473-default-rtdb.firebaseio.com/customers_new/"+newAsset.key+".json",
+        "https://dailytransactions-99473-default-rtdb.firebaseio.com/customers_new/" +
+          newAsset.key +
+          ".json",
         {
-          method: "PATCH",
+          method: "PUT",
           body: JSON.stringify({ newAsset }),
         }
       );
@@ -179,13 +240,13 @@ const Assets = (props) => {
           body: JSON.stringify({ newAsset }),
         }
       );
+      setAssets((prevState) => [newAsset, ...assets]);
     }
-   setAssets((prevState) => [newAsset, ...assets]);
+    //new fetchCustomerDetails();
   };
   return (
     <>
       <Paper className={classes.pageContent}>
-     
         <Toolbar>
           <Input
             label="Search Asset Details"
