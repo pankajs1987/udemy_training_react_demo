@@ -10,6 +10,12 @@ import AddAssets from "./AddAssets";
 import Controls from "../common/Controls";
 import Add from "@mui/icons-material/Add";
 import { makeStyles } from "@material-ui/core";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import BalanceIcon from '@mui/icons-material/Balance';
+import CheckIcon from '@mui/icons-material/Check';
+import CalculateIcon from '@mui/icons-material/Calculate';
+import FunctionsIcon from '@mui/icons-material/Functions';
+import PercentIcon from '@mui/icons-material/Percent';
 const headCells = [
   { id: "dateIn", label: "Transaction Date" },
   { id: "customerName", label: "Customer Name" },
@@ -79,17 +85,17 @@ const AssetItems = (props) => {
               <TableCell>{item.customerName}</TableCell>
               <TableCell>
                 <ul>
-                  <li>Amount : {item.amount}</li>
-                  <li>Interest : {item.interest} </li>
-                  <li>Total : {Number(item.interest)+Number(item.amount)} </li>
+                  <li> <CurrencyRupeeIcon fontSize="small"/> {item.amount}</li>
+                  <li><CalculateIcon fontSize="small" /> {item.interest} </li>
+                  <li><FunctionsIcon fontSize="small" /> {Number(item.interest)+Number(item.amount)} </li>
                 </ul>
               </TableCell>
-              <TableCell>{item.rateofInterest}%</TableCell>
+              <TableCell>{item.rateofInterest}<PercentIcon fontSize="small" /> </TableCell>
               <TableCell>
                 <ul>
-                  <li>Weight : {item.goldWeight} gm</li>
+                  <li><BalanceIcon fontSize="small"/> {item.goldWeight} gm</li>
                   <li>
-                    Amount : {Math.round(
+                     <CurrencyRupeeIcon fontSize="small"/> {Math.round(
                       (item.goldWeight *
                         (item.goldPercentage = item.goldPercentage
                           ? item.goldPercentage
@@ -98,16 +104,16 @@ const AssetItems = (props) => {
                     ) / 100}
                   </li>
                   {item.goldPercentage && (
-                    <li>Purity: {item.goldPercentage} %</li>
+                    <li><CheckIcon fontSize="small" /> {item.goldPercentage} %</li>
                   )}
                 </ul>
               </TableCell>
 
               <TableCell>
                 <ul>
-                  <li>Weight : {item.silverWeight} gm</li>
+                  <li><BalanceIcon fontSize="small"/> {item.silverWeight} gm</li>
                   <li>
-                  Amount : {Math.round(
+                   <CurrencyRupeeIcon fontSize="small"/> {Math.round(
                       (item.silverWeight *
                         (item.silverPercentage = item.silverPercentage
                           ? item.silverPercentage
@@ -116,13 +122,13 @@ const AssetItems = (props) => {
                     ) / 100}
                   </li>
                   {item.silverPercentage && (
-                    <li>Purity: {item.silverPercentage} %</li>
+                    <li><CheckIcon fontSize="small" /> {item.silverPercentage} %</li>
                   )}
                 </ul>
               </TableCell>
               <TableCell>
-                {item.silverWeight * props.silverRates +
-                  item.goldWeight * props.goldRates}
+                <CurrencyRupeeIcon fontSize="small"/> {Math.round((((item.silverWeight*(item.silverPercentage/100)) * props.silverRates +
+                  (item.goldWeight*(item.goldPercentage/100)) * props.goldRates)/100)*100)}
               </TableCell>
               <TableCell>
                 <ActionButton

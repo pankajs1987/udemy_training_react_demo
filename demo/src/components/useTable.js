@@ -23,7 +23,7 @@ export default function useTable(records, headCells,filterFn) {
 
     const classes = useStyles();
 
-    const pages = [5, 10, 25, 50]
+    const pages = [10, 25, 50,100,150,200,250,300,350,400,450,500]
     const [page, setPage] = useState(0)
     const [rowsPerPage, setRowsPerPage] = useState(pages[page])
     const [order, setOrder] = useState()

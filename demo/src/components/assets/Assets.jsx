@@ -122,7 +122,7 @@ const Assets = (props) => {
         totalInvestmentTemp =
           Number(totalInvestmentTemp) +
           Number(responseData[key].newAsset.amount);
-          let totalAmountToRecover = ((yearDiff*12)+monthDiff+(dayDiff/(new Date(now.getFullYear(), now.getMonth()+1, 0).getDate()))*(Number(responseData[key].newAsset.rateofInterest)/100)*(Number(responseData[key].newAsset.amount)));
+         let totalAmountToRecover = ((Number((yearDiff*12))+Number(monthDiff)+Number((dayDiff/(new Date(now.getFullYear(), now.getMonth()+1, 0).getDate()))))*(Number(responseData[key].newAsset.rateofInterest)/100)*(Number(responseData[key].newAsset.amount)));
           if(responseData[key].newAsset.customerStatus && responseData[key].newAsset.customerStatus ==='done'){
             customerDetailsCompletedObj.push({
               key: key,
