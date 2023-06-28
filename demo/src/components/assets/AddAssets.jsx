@@ -24,15 +24,19 @@ const initialFValues = {
   rateofInterest: 0,
   silverPercentage: 0,
   goldPercentage: 0,
+  returnStatus:""
 };
+
+const returnStatus = [
+  { id: 'return', title: 'Return' },
+  { id: 'PendingPaymentWithMerchant', title: 'Pending Payment with Merchant' },
+  { id: 'PendingPaymentWithMe', title: 'Pending Payment with Money Owner' },
+  { id: 'AssetOutWithMerchant', title: 'Asset Taken,Money Pending' },
+]
 
 export default function AddAssets(props) {
   const { addOrEdit, recordForEdit } = props;
-  const {goldAmount,setGoldAmount} = useState(0);
-  const {silverAmount,setSilverAmount} = useState(0);
-   let goldAmtShow=0;
-   let silverAmtShow=0;
-  const validate = (fieldValues = values) => {
+const validate = (fieldValues = values) => {
     let temp = { ...errors };
     if ("amount" in fieldValues)
       temp.amount =
@@ -132,15 +136,13 @@ export default function AddAssets(props) {
           />
           {recordForEdit && 
           <Controls.Select
-            name="rateofInterest"
+            name="returnItem"
             label="Return item"
-            value={values.roi}
             onChange={handleInputChange}
-            options={props.roi}
-            error={errors.roi}
+            options={returnStatus}
+            error={errors.returnStatus}
           />
 }
-
 
           <div>
             <Controls.Button

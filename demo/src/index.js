@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import SignIn from "./components/authentication/SignIn";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import AssetItems from "./components/assets/AssetItems";
+
 import AddAssets from "./components/assets/AddAssets";
 import RootLayout from "./components/routes/RootLayout";
 
@@ -14,6 +15,8 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { path: "/", element: <App /> },
+      { path: "/signin", element: <SignIn /> },
+
       { path: "/AssetSummary", element: <AddAssets /> },
     ],
   },

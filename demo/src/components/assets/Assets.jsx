@@ -28,11 +28,9 @@ const Assets = (props) => {
   const [silverRates, setSilverRates] = useState(0);
   const [totalGold, setTotalGold] = useState(0);
   const [totalSilver, setTotalSilver] = useState(0);
-  const [totalInterest, setTotalInterest] = useState(0);
   const [totalInvestment, setTotalInvestment] = useState(0);
   const [roi, setROI] = useState([]);
   const [rates, setRates] = useState([]);
-  const [showAddAssets, setShowAddAssets] = useState(false);
   const [isLoading, setisLoading] = useState(true);
   const [filterFn, setFilterFn] = useState({
     fn: (values) => {

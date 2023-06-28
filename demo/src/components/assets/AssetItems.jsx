@@ -10,12 +10,12 @@ import AddAssets from "./AddAssets";
 import Controls from "../common/Controls";
 import Add from "@mui/icons-material/Add";
 import { makeStyles } from "@material-ui/core";
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import BalanceIcon from '@mui/icons-material/Balance';
-import CheckIcon from '@mui/icons-material/Check';
-import CalculateIcon from '@mui/icons-material/Calculate';
-import FunctionsIcon from '@mui/icons-material/Functions';
-import PercentIcon from '@mui/icons-material/Percent';
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import BalanceIcon from "@mui/icons-material/Balance";
+import CheckIcon from "@mui/icons-material/Check";
+import CalculateIcon from "@mui/icons-material/Calculate";
+import FunctionsIcon from "@mui/icons-material/Functions";
+import PercentIcon from "@mui/icons-material/Percent";
 const headCells = [
   { id: "dateIn", label: "Transaction Date" },
   { id: "customerName", label: "Customer Name" },
@@ -46,16 +46,23 @@ const AssetItems = (props) => {
 
   const [openPopup, setOpenPopup] = useState(false);
   const [recordForEdit, setRecordForEdit] = useState(null);
+  const [recordForDelete, setRecordForDelete] = useState(null);
   const { TblContainer, TblHead, TblPagination, recordsAfterPagingAndSorting } =
     useTable(props.assets, headCells, filterFn);
-  const openInPopup = (item) => {
-    setRecordForEdit(item);
+  const openInPopup = (item, processType) => {
+    if (processType === "EDIT") {
+      setRecordForEdit(item);
+      setRecordForDelete(null);
+    } else if (processType === "DELETE") {
+      setRecordForDelete(item);
+      setRecordForEdit(null);
+    } else if (processType === "ADD") {
+      setRecordForDelete(null);
+      setRecordForEdit(null);
+    }
+
     setOpenPopup(true);
   };
-
-  // for (const key in props.assets) {
-  //   console.log("Printing Assets in AssetItems : " + props.assets[key].json);
-  // }
 
   const handleSubmitClick = () => {
     setOpenPopup(false);
@@ -70,8 +77,7 @@ const AssetItems = (props) => {
         startIcon={<Add />}
         type="button"
         onClick={() => {
-          setOpenPopup(true);
-          setRecordForEdit(null);
+          openInPopup(null, "ADD");
         }}
       />
       <TblContainer>
@@ -85,61 +91,98 @@ const AssetItems = (props) => {
               <TableCell>{item.customerName}</TableCell>
               <TableCell>
                 <ul>
-                  <li> <CurrencyRupeeIcon fontSize="small"/> {item.amount}</li>
-                  <li><CalculateIcon fontSize="small" /> {item.interest} </li>
-                  <li><FunctionsIcon fontSize="small" /> {Number(item.interest)+Number(item.amount)} </li>
+                  <li>
+                    {" "}
+                    <CurrencyRupeeIcon fontSize="small" /> {item.amount}
+                  </li>
+                  <li>
+                    <CalculateIcon fontSize="small" /> {item.interest}
+                  </li>
+                  <li>
+                    <FunctionsIcon fontSize="small" />
+                    {Math.round(
+                      (Number(item.interest) + Number(item.amount)) / 100
+                    ) * 100}
+                  </li>
                 </ul>
               </TableCell>
-              <TableCell>{item.rateofInterest}<PercentIcon fontSize="small" /> </TableCell>
+              <TableCell>
+                {item.rateofInterest}
+                <PercentIcon fontSize="small" />
+              </TableCell>
               <TableCell>
                 <ul>
-                  <li><BalanceIcon fontSize="small"/> {item.goldWeight} gm</li>
                   <li>
-                     <CurrencyRupeeIcon fontSize="small"/> {Math.round(
-                      (item.goldWeight *
+                    <BalanceIcon fontSize="small" /> {item.goldWeight} gm
+                  </li>
+                  <li>
+                    <CurrencyRupeeIcon fontSize="small" />
+                    {Math.round(
+                      item.goldWeight *
                         (item.goldPercentage = item.goldPercentage
                           ? item.goldPercentage
-                          : 1)) *
-                        props.goldRates 
+                          : 1) *
+                        props.goldRates
                     ) / 100}
                   </li>
                   {item.goldPercentage && (
-                    <li><CheckIcon fontSize="small" /> {item.goldPercentage} %</li>
+                    <li>
+                      <CheckIcon fontSize="small" /> {item.goldPercentage} %
+                    </li>
                   )}
                 </ul>
               </TableCell>
 
               <TableCell>
                 <ul>
-                  <li><BalanceIcon fontSize="small"/> {item.silverWeight} gm</li>
                   <li>
-                   <CurrencyRupeeIcon fontSize="small"/> {Math.round(
-                      (item.silverWeight *
+                    <BalanceIcon fontSize="small" /> {item.silverWeight} gm
+                  </li>
+                  <li>
+                    <CurrencyRupeeIcon fontSize="small" />{" "}
+                    {Math.round(
+                      item.silverWeight *
                         (item.silverPercentage = item.silverPercentage
                           ? item.silverPercentage
-                          : 1)) *
+                          : 1) *
                         props.silverRates
                     ) / 100}
                   </li>
                   {item.silverPercentage && (
-                    <li><CheckIcon fontSize="small" /> {item.silverPercentage} %</li>
+                    <li>
+                      <CheckIcon fontSize="small" /> {item.silverPercentage} %
+                    </li>
                   )}
                 </ul>
               </TableCell>
               <TableCell>
-                <CurrencyRupeeIcon fontSize="small"/> {Math.round((((item.silverWeight*(item.silverPercentage/100)) * props.silverRates +
-                  (item.goldWeight*(item.goldPercentage/100)) * props.goldRates)/100)*100)}
+                <CurrencyRupeeIcon fontSize="small" />{" "}
+                {Math.round(
+                  ((item.silverWeight *
+                    (item.silverPercentage / 100) *
+                    props.silverRates +
+                    item.goldWeight *
+                      (item.goldPercentage / 100) *
+                      props.goldRates) /
+                    100) *
+                    100
+                )}
               </TableCell>
               <TableCell>
                 <ActionButton
                   color="primary"
                   onClick={() => {
-                    openInPopup(item);
+                    openInPopup(item, "EDIT");
                   }}
                 >
                   <EditOutlined fontSize="small" />
                 </ActionButton>
-                <ActionButton color="secondary">
+                <ActionButton
+                  color="secondary"
+                  onClick={() => {
+                    openInPopup(item, "DELETE");
+                  }}
+                >
                   <Close fontSize="small" />
                 </ActionButton>
               </TableCell>
@@ -148,20 +191,29 @@ const AssetItems = (props) => {
         </TableBody>
       </TblContainer>
       <TblPagination />
-      <Popup
-        title={recordForEdit ? "Edit Asset Details" : "Add Asset Details"}
-        openPopup={openPopup}
-        setOpenPopup={setOpenPopup}
-      >
-        <AddAssets
-          goldRates={props.goldRates}
-          silverRates={props.silverRates}
-          roi={props.roi}
-          handleSubmitClick={handleSubmitClick}
-          saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler}
-          recordForEdit={recordForEdit}
-        />
-      </Popup>
+      {!recordForDelete && (
+        <Popup
+          title={recordForEdit ? "Edit Asset Details" : "Add Asset Details"}
+          openPopup={openPopup}
+          setOpenPopup={setOpenPopup}
+        >
+          <AddAssets
+            goldRates={props.goldRates}
+            silverRates={props.silverRates}
+            roi={props.roi}
+            handleSubmitClick={handleSubmitClick}
+            saveOrUpdateAssetHandler={props.saveOrUpdateAssetHandler}
+            recordForEdit={recordForEdit}
+          />
+        </Popup>
+      )}
+      {recordForDelete && (
+        <Popup
+          title={"Are you Sure to Delete this Entry"}
+          openPopup={openPopup}
+          setOpenPopup={setOpenPopup}
+        ></Popup>
+      )}
     </>
   );
 };
