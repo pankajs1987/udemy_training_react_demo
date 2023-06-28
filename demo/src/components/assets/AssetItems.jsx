@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 
 const AssetItems = (props) => {
   const classes = useStyles();
-  const [showAddAssets, setShowAddAssets] = useState(false);
   const [filterFn, setFilterFn] = useState({
     fn: (items) => {
       return items;

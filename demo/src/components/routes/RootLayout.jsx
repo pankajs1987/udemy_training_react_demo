@@ -55,11 +55,7 @@ function RootLayout() {
         <SideMenu />
         <div className={classes.appMain}>
           <Header />
-          <PageHeader
-                title="Assets Details"
-                subTitle="Let's Grow together..."
-                icon={<PeopleOutlineTwoToneIcon fontSize="large" />}
-            />
+          
                 <StyledEngineProvider injectFirst>
                 <Outlet />
     </StyledEngineProvider>

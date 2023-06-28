@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import AssetItemDetails from "./AssetItemDetails";
 import { useEffect } from "react";
 import Loader from "../UI/Loader";
-
+import { onAuthStateChanged } from "firebase/auth";
+import { auth, db } from "../../config/firebase";
+import { onValue, ref } from "firebase/database";
+import PeopleOutlineTwoToneIcon from "@mui/icons-material/PeopleOutlineTwoTone";
 import { Paper, makeStyles, Toolbar, InputAdornment } from "@material-ui/core";
 
 import { Search } from "@mui/icons-material";
 import Input from "../common/Input";
+import PageHeader from "../PageHeader";
 
 const useStyles = makeStyles((theme) => ({
   pageContent: {
@@ -37,48 +41,86 @@ const Assets = (props) => {
       return values;
     },
   });
-
-  const [recordForEdit, setRecordForEdit] = useState(null);
-
   const [httpError, sethttpError] = useState();
   const handleSearch = (e) => {
-    console.log(e.target.value);
     let target = e.target;
     setFilterFn({
       fn: (values) => {
+        console.log("filter function : " + values);
+
         if (target.value == "") return values;
         else {
-          const updatedAssets = assets.filter((x) =>
-            x.customerName.toLowerCase().includes(target.value)
-          );
+          const updatedAssets = values.filter((x) => {
+            x.customerName.toLowerCase().includes(target.value);
+          });
           setAssets(updatedAssets);
         }
-        return assets.filter((x) =>
+        return values.filter((x) =>
           x.customerName.toLowerCase().includes(target.value)
         );
       },
     });
   };
 
-  useEffect(() => {
-    const fetchRateOfInterest = async () => {
-      const response = await fetch(
-        "https://dailytransactions-99473-default-rtdb.firebaseio.com/ROI.json"
-      );
-      const responseData = await response.json();
-      const roi = [];
-      for (const key in responseData) {
-        roi.push({
-          id: responseData[key],
-          title: responseData[key],
+  //
+  const updateInvestmentDetailsforToday = async () => {
+    onValue(ref(db, "customers_new"), (snapShot) => {
+      if (snapShot.exists()) {
+        snapShot.forEach((asset) => {
+          //   console.log("inside for each : key ", asset.key);
+          //  console.log("inside for each : value {} ,", asset.val());
         });
+        // Object.values(snapShot.val()).map((assetDetails) => {
+
+        // });
       }
-      setROI(roi);
-    };
-    fetchRateOfInterest().catch((error) => {
-      setisLoading(false);
-      sethttpError("Not able to fetch customer details");
     });
+  };
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        const uid = user.uid;
+        // ...
+        console.log("uid", uid);
+      } else {
+        // User is signed out
+        // ...
+        console.log("user is logged out");
+      }
+    });
+
+    const roi = [];
+    const fetchRateOfInterest = async () => {
+      onValue(ref(db, "ROI"), (snapShot) => {
+        if (snapShot.exists()) {
+          snapShot.forEach((rateOfInertest) => {
+            roi.push({
+              id: rateOfInertest.val(),
+              title: rateOfInertest.val(),
+            });
+          });
+        }
+      });
+    };
+   
+
+    //   const response = await fetch(
+    //     "https://dailytransactions-99473-default-rtdb.firebaseio.com/ROI.json"
+    //   );
+    //   const responseData = await response.json();
+    //   //const roi = [];
+    //   for (const key in responseData) {
+    //     roi.push({
+    //       id: responseData[key],
+    //       title: responseData[key],
+    //     });
+    //   }
+    //   setROI(roi);
+    // };
+    fetchRateOfInterest();
     const fetchGoldAndSilverRates = async () => {
       const response = await fetch(
         "https://dailytransactions-99473-default-rtdb.firebaseio.com/rates.json"
@@ -96,75 +138,82 @@ const Assets = (props) => {
       sethttpError("Not able to fetch Intrest details" + error);
     });
 
-    const fetchCustomerDetails = async () => {
-      const response = await fetch(
-        'https://dailytransactions-99473-default-rtdb.firebaseio.com/customers_new.json'
-      );
-      if (!response.ok) {
-        throw new Error("Not able to fetch customer details");
-      }
-      const responseData = await response.json();
-      const customerDetailsObj = [];
-      const customerDetailsCompletedObj = [];
-      let totalGoldTemp = 0;
-      let totalSilverTemp = 0;
-      let totalInvestmentTemp = 0;
-      for (const key in responseData) {
-        let now = new Date();
-        const {yearDiff,monthDiff,dayDiff} = splitDateToYearMonthAndDays(new Date(responseData[key].newAsset.dateIn),now);
-        totalGoldTemp =
-          Number(totalGoldTemp) + Number(responseData[key].newAsset.goldWeight);
-        totalSilverTemp =
-          Number(totalSilverTemp) +
-          Number(responseData[key].newAsset.silverWeight);
-        totalInvestmentTemp =
-          Number(totalInvestmentTemp) +
-          Number(responseData[key].newAsset.amount);
-         let totalAmountToRecover = ((Number((yearDiff*12))+Number(monthDiff)+Number((dayDiff/(new Date(now.getFullYear(), now.getMonth()+1, 0).getDate()))))*(Number(responseData[key].newAsset.rateofInterest)/100)*(Number(responseData[key].newAsset.amount)));
-          if(responseData[key].newAsset.customerStatus && responseData[key].newAsset.customerStatus ==='done'){
-            customerDetailsCompletedObj.push({
-              key: key,
-              customerName: responseData[key].newAsset.customerName,
-              amount: responseData[key].newAsset.amount,
-              rateofInterest: responseData[key].newAsset.rateofInterest,
-              goldWeight: responseData[key].newAsset.goldWeight,
-              silverWeight: responseData[key].newAsset.silverWeight,
-              dateIn: responseData[key].newAsset.dateIn,
-              goldPercentage: responseData[key].newAsset.goldPercentage,
-              silverPercentage: responseData[key].newAsset.silverPercentage,
-              interest: totalAmountToRecover,
-              status: responseData[key].newAsset.customerStatus,
-              
-            });
-          }else{
-        customerDetailsObj.push({
-          key: key,
-          customerName: responseData[key].newAsset.customerName,
-          amount: responseData[key].newAsset.amount,
-          rateofInterest: responseData[key].newAsset.rateofInterest,
-          goldWeight: responseData[key].newAsset.goldWeight,
-          silverWeight: responseData[key].newAsset.silverWeight,
-          dateIn: responseData[key].newAsset.dateIn,
-          goldPercentage: responseData[key].newAsset.goldPercentage,
-          silverPercentage: responseData[key].newAsset.silverPercentage,
-          interest: Math.round((totalAmountToRecover) * 100) / 100,
-          status: responseData[key].newAsset.customerStatus
-        });
-      }
-      }
-      setTotalGold(totalGoldTemp);
-      setTotalSilver(totalSilverTemp);
-      setTotalInvestment(totalInvestmentTemp);
+    const customerDetailsObj = [];
+    const customerDetailsCompletedObj = [];
+    let totalGoldTemp = 0;
+    let totalSilverTemp = 0;
+    let totalInvestmentTemp = 0;
+    const fetchCustomerDetails = () => {
+      updateInvestmentDetailsforToday();
+      onValue(ref(db, "customers_new"), (snapShot) => {
+        if (snapShot.exists()) {
+          snapShot.forEach((assets) => {
+            const assetDetails = assets.val();
+            const assetKey = assets.key;
 
-      setAssets(customerDetailsObj);
-      setisLoading(false);
+            let now = new Date();
+            const { yearDiff, monthDiff, dayDiff } =
+              splitDateToYearMonthAndDays(new Date(assetDetails.dateIn), now);
+            totalGoldTemp =
+              Number(totalGoldTemp) + Number(assetDetails.goldWeight);
+            totalSilverTemp =
+              Number(totalSilverTemp) + Number(assetDetails.silverWeight);
+            totalInvestmentTemp =
+              Number(totalInvestmentTemp) + Number(assetDetails.amount);
+            let totalAmountToRecover =
+              (Number(yearDiff * 12) +
+                Number(monthDiff) +
+                Number(
+                  dayDiff /
+                    new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate()
+                )) *
+              (Number(assetDetails.rateofInterest) / 100) *
+              Number(assetDetails.amount);
+            if (
+              assetDetails.returnItem &&
+              assetDetails.returnItem === "return"
+            ) {
+              customerDetailsCompletedObj.push({
+                key: assetKey,
+                customerName: assetDetails.customerName,
+                amount: assetDetails.amount,
+                rateofInterest: assetDetails.rateofInterest,
+                goldWeight: assetDetails.goldWeight,
+                silverWeight: assetDetails.silverWeight,
+                dateIn: assetDetails.dateIn,
+                goldPercentage: assetDetails.goldPercentage,
+                silverPercentage: assetDetails.silverPercentage,
+                interest: totalAmountToRecover,
+                status: assetDetails.customerStatus,
+              });
+            } else {
+              customerDetailsObj.push({
+                key: assetKey,
+                customerName: assetDetails.customerName,
+                amount: assetDetails.amount,
+                rateofInterest: assetDetails.rateofInterest,
+                goldWeight: assetDetails.goldWeight,
+                silverWeight: assetDetails.silverWeight,
+                dateIn: assetDetails.dateIn,
+                goldPercentage: assetDetails.goldPercentage,
+                silverPercentage: assetDetails.silverPercentage,
+                interest: Math.round(totalAmountToRecover * 100) / 100,
+                status: assetDetails.customerStatus,
+              });
+            }
+          });
+        }
+      });
+      customerDetailsCompletedObj.forEach(customerDetails=>console.log(customerDetails))
     };
-    fetchCustomerDetails().catch((error) => {
-      setisLoading(false);
-      sethttpError("Not able to fetch customer details");
-    });
-  }, []);
-
+    setROI(roi);
+    fetchCustomerDetails();
+    setTotalGold(totalGoldTemp);
+    setTotalSilver(totalSilverTemp);
+    setTotalInvestment(totalInvestmentTemp);
+    setAssets(customerDetailsObj);
+    setisLoading(false);
+  }, [totalInvestment, isLoading]);
   if (isLoading) {
     if (httpError) {
       return (
@@ -176,12 +225,12 @@ const Assets = (props) => {
       return <Loader />;
     }
   }
-  function splitDateToYearMonthAndDays (startingDate, endingDate) {
+  function splitDateToYearMonthAndDays(startingDate, endingDate) {
     let startDate = new Date(
-      new Date(startingDate).toISOString().substr(0, 10)
+      new Date(startingDate).toISOString().substring(0, 10)
     );
     if (!endingDate) {
-      endingDate = new Date().toISOString().substr(0, 10); // need date in YYYY-MM-DD format
+      endingDate = new Date().toISOString().substring(0, 10); // need date in YYYY-MM-DD format
     }
     let endDate = new Date(endingDate);
     if (startDate > endDate) {
@@ -213,13 +262,10 @@ const Assets = (props) => {
       dayDiff += daysInMonth[startDate.getMonth()];
     }
 
-    return {yearDiff , monthDiff , dayDiff };
-  };
-
-
+    return { yearDiff, monthDiff, dayDiff };
+  }
 
   const saveOrUpdateAssetHandler = (newAsset) => {
-
     if (newAsset && newAsset.key) {
       fetch(
         "https://dailytransactions-99473-default-rtdb.firebaseio.com/customers_new/" +
@@ -227,7 +273,7 @@ const Assets = (props) => {
           ".json",
         {
           method: "PUT",
-          body: JSON.stringify({ newAsset }),
+          body: JSON.stringify({ ...newAsset }),
         }
       );
     } else {
@@ -235,7 +281,7 @@ const Assets = (props) => {
         "https://dailytransactions-99473-default-rtdb.firebaseio.com/customers_new.json",
         {
           method: "POST",
-          body: JSON.stringify({ newAsset }),
+          body: JSON.stringify({ ...newAsset }),
         }
       );
       setAssets((prevState) => [newAsset, ...assets]);
@@ -244,6 +290,14 @@ const Assets = (props) => {
   };
   return (
     <>
+      <PageHeader
+        totalGold={totalGold}
+        totalSilver={totalSilver}
+        totalInvestment={totalInvestment}
+        title="Assets Details"
+        subTitle="Let's Grow together..."
+        icon={<PeopleOutlineTwoToneIcon fontSize="large" />}
+      />
       <Paper className={classes.pageContent}>
         <Toolbar>
           <Input

@@ -1,7 +1,7 @@
 import * as React from 'react';
+import { useState } from "react";
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -10,8 +10,11 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import { createTheme } from '@mui/material/styles';
+import {  signInWithEmailAndPassword   } from 'firebase/auth';
+import { auth } from '../../config/firebase';
+import { Navigate} from 'react-router-dom'
 
 function Copyright(props) {
   return (
@@ -29,6 +32,7 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignIn() {
+    const [authenticated, setauthenticated] = useState(null);
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -36,12 +40,28 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     });
+
+    signInWithEmailAndPassword(auth, data.get('email'), data.get('password'))
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            console.log(user);
+            if(user)
+              setauthenticated(user)
+              else{
+                setauthenticated(null);
+              }
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode, errorMessage)
+        });
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
+<>
+
         <Box
           sx={{
             marginTop: 8,
@@ -102,9 +122,10 @@ export default function SignIn() {
               </Grid>
             </Grid>
           </Box>
+          <Copyright sx={{ mt: 8, mb: 4 }} />
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
-      </Container>
-    </ThemeProvider>
+        {authenticated && <Navigate replace to="/dashboard" />}
+        </>
+    
   );
 }

@@ -1,0 +1,2611 @@
+{
+  "ROI": {
+    "ROI1": 1.25,
+    "ROI2": 1.4,
+    "ROI3": 2,
+    "ROI4": 2.5
+  },
+  "customers_new": {
+    "-NScTlCKrnO9cYto4Pb2": {
+      "newAsset": {
+        "amount": "50000",
+        "customerName": "Pankaj Sharma grid test",
+        "dateIn": "2023-04-11T23:36:00.000Z",
+        "goldPercentage": "80",
+        "goldWeight": "250",
+        "interest": 23.33,
+        "key": "-NScTlCKrnO9cYto4Pb2",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "250"
+      }
+    },
+    "-NSqNrJAs9-UsxymqEhS": {
+      "newAsset": {
+        "amount": "55000",
+        "customerName": "Pankaj Sharma",
+        "dateIn": "2023-04-12T16:53:16.668Z",
+        "goldPercentage": "80",
+        "goldWeight": "12.5",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "300"
+      }
+    },
+    "-NSqQWMg1cVc9URKPne4": {
+      "newAsset": {
+        "amount": "25000",
+        "customerName": "Pankaj Sharma new 12th April",
+        "dateIn": "2023-04-12T17:01:27.951Z",
+        "goldPercentage": "60",
+        "goldWeight": "12.5",
+        "interest": 11.67,
+        "key": "-NSqQWMg1cVc9URKPne4",
+        "rateofInterest": 1.25,
+        "returnItem": "return",
+        "silverPercentage": "30",
+        "silverWeight": "350"
+      }
+    },
+    "-NSqQ_M2R19-fD1Yo1Jq": {
+      "newAsset": {
+        "amount": "25000",
+        "customerName": "Pankaj Sharma new 12th April",
+        "dateIn": "2023-04-11T17:01:00.000Z",
+        "goldPercentage": "60",
+        "goldWeight": "12.5",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "30",
+        "silverWeight": "350"
+      }
+    },
+    "-NSqk33SuUQ3B1cMkSPt": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Rahul Kumar",
+        "dateIn": "2020-07-27T18:33:00.000Z",
+        "goldPercentage": "80",
+        "goldWeight": "3.5",
+        "interest": 111.33,
+        "key": "-NSqk33SuUQ3B1cMkSPt",
+        "rateofInterest": 1.4,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSqwa278vcM0E_7mzwd": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Santosh Devi",
+        "dateIn": "2020-09-23T18:40:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.82",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqwtn4a0upwhv5hznd": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Narendra Singh",
+        "dateIn": "2020-10-11T19:30:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10.57",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqxHueIkvX4sczrIgN": {
+      "newAsset": {
+        "amount": "22000",
+        "customerName": "Rajendra Kumar",
+        "dateIn": "2020-10-22T19:30:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "8.19",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "86"
+      }
+    },
+    "-NSqxVQTAKQH7w_rVBMx": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Pramodh Chaudhary",
+        "dateIn": "2020-12-03T19:30:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.94",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqxgqH1PCCNKlRGRAi": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Kalpana Thakur",
+        "dateIn": "2021-01-22T19:30:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.75",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "119"
+      }
+    },
+    "-NSqxsCdtsPMAna0clol": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Pramodh Bhaskar",
+        "dateIn": "2021-01-31T19:30:00.000Z",
+        "goldPercentage": 0,
+        "goldWeight": 0,
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "494"
+      }
+    },
+    "-NSqyAo2WLqZhY4jd_Dn": {
+      "newAsset": {
+        "amount": "150000",
+        "customerName": "Sunil Kumar",
+        "dateIn": "2021-02-27T19:35:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "59.52",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqyJYMudesgKOAHFTe": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Mamta",
+        "dateIn": "2021-03-27T19:35:00.000Z",
+        "goldPercentage": 0,
+        "goldWeight": 0,
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "338"
+      }
+    },
+    "-NSqyXQBDBZ11L-VwYBW": {
+      "newAsset": {
+        "amount": "25000",
+        "customerName": "Jaipal Thakur",
+        "dateIn": "2021-04-01T19:35:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "13.70",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqyhjM7D8JAChShp2g": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Sunil Kumar",
+        "dateIn": "2021-04-01T19:35:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11.21",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqypXjuRVJ0lMzdW-q": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Monti",
+        "dateIn": "2021-04-10T19:35:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.12",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqyyd20E8XgIdHQaGu": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Sheri Lal",
+        "dateIn": "2021-04-11T19:35:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqz6q8Zp9tsW4uWjTW": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Hargyan",
+        "dateIn": "2021-06-14T19:35:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.77",
+        "interest": 1470,
+        "key": "-NSqz6q8Zp9tsW4uWjTW",
+        "rateofInterest": 1.4,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSqzGBzSj8Kw0rwZz2r": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Vikram Saini",
+        "dateIn": "2021-06-15T19:35:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.91",
+        "interest": 2348.27,
+        "key": "-NSqzGBzSj8Kw0rwZz2r",
+        "rateofInterest": 1.4,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSqzlsUQoouFvDIUJz2": {
+      "newAsset": {
+        "amount": "4000",
+        "customerName": "Saroj",
+        "dateIn": "2021-06-22T19:42:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.63",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSqzuarLUgSiHY1hGKY": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Amarjit Singh",
+        "dateIn": "2021-06-25T19:42:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.5",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr-2MOs7MlKvfDxUih": {
+      "newAsset": {
+        "amount": "9000",
+        "customerName": "Syamkali",
+        "dateIn": "2021-07-12T19:42:00.000Z",
+        "goldPercentage": 0,
+        "goldWeight": 0,
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "3.16"
+      }
+    },
+    "-NSr-C7JVBJJo_useF7X": {
+      "newAsset": {
+        "amount": "55000",
+        "customerName": "Vinod Kumar",
+        "dateIn": "2021-07-21T19:42:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "17.56",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr-R44LkCfnL3knGIu": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Syam kali",
+        "dateIn": "2021-07-12T19:42:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.24",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr-Zc73fjvcwv4FVg0": {
+      "newAsset": {
+        "amount": "4000",
+        "customerName": "Babita",
+        "dateIn": "2021-07-27T19:42:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.3",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr-iAWxNBSLxCGJMlm": {
+      "newAsset": {
+        "amount": "8100",
+        "customerName": "Rohtash",
+        "dateIn": "2021-08-02T19:42:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.12",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr-sGrIX8-s6_MJg6v": {
+      "newAsset": {
+        "amount": "50000",
+        "customerName": "Sunil Kumar",
+        "dateIn": "2021-08-10T19:42:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "22.86",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr0FuhLrnVicWJRxXw": {
+      "newAsset": {
+        "amount": "50000",
+        "customerName": "Sunil Kumar",
+        "dateIn": "2021-08-25T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11.08",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "482"
+      }
+    },
+    "-NSr0Q0oLcWUKLb33hFE": {
+      "newAsset": {
+        "amount": "18000",
+        "customerName": "Tushar Yadav",
+        "dateIn": "2021-08-25T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.42",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr0_EMvjbRMx-aMHUx": {
+      "newAsset": {
+        "amount": "13000",
+        "customerName": "Pramodh",
+        "dateIn": "2021-09-02T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.57",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr0j0p2K-x6MLqLmiY": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Sonu Yadav",
+        "dateIn": "2021-10-02T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr0p1CzGP2bPupcRQy": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Sonu Yadav",
+        "dateIn": "2021-10-02T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "264"
+      }
+    },
+    "-NSr12-tM-ibq8DEnaaY": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Manorma Yadav",
+        "dateIn": "2021-10-07T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr1BnFyON_NZiT1mWI": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Vinod Kumar",
+        "dateIn": "2021-10-07T19:48:00.000Z",
+        "goldPercentage": 0,
+        "goldWeight": 0,
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "305"
+      }
+    },
+    "-NSr1Kqi12-35qOxoexy": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Usha Devi",
+        "dateIn": "2021-10-14T19:48:00.000Z",
+        "goldPercentage": 0,
+        "goldWeight": 0,
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "334"
+      }
+    },
+    "-NSr1c1mtQUShPgPVCnI": {
+      "newAsset": {
+        "amount": "4000",
+        "customerName": "Narendra Singh",
+        "dateIn": "2021-10-14T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.95",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr1lhCwNyY6vm4GLM8": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Raanu Thakur",
+        "dateIn": "2021-11-10T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "14.52",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr1xiPpjb0jA3Ovvoq": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Babita Tyagi",
+        "dateIn": "2021-11-17T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.63",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr26KKd1h8OxasWsHl": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Rukshana",
+        "dateIn": "2021-11-21T19:48:00.000Z",
+        "goldPercentage": 0,
+        "goldWeight": "2.84",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr2G9fCF40_kU0pw9N": {
+      "newAsset": {
+        "amount": "4000",
+        "customerName": "Tushar Yadav",
+        "dateIn": "2021-11-27T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "1.57",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr2OubC2RE1A7Jzs0M": {
+      "newAsset": {
+        "amount": "70000",
+        "customerName": "Sandeep Thakur",
+        "dateIn": "2021-12-03T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "22.47",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr2ZobX00BJHEswiFx": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Babita Tyagi",
+        "dateIn": "2021-12-14T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.56",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr2lSadhrjH1yz3FkC": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Dhyan Singh",
+        "dateIn": "2021-12-14T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "92.47"
+      }
+    },
+    "-NSr2vtGCj9iNMnTpFUH": {
+      "newAsset": {
+        "amount": "60000",
+        "customerName": "Rabita w/o Pavan",
+        "dateIn": "2021-12-21T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "22.42",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr34Sx1KS18WMgC2QP": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Pravesh",
+        "dateIn": "2021-12-26T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.46",
+        "interest": 944.53,
+        "key": "-NSr34Sx1KS18WMgC2QP",
+        "rateofInterest": 1.4,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSr3CclCyNbP-X-JrIb": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Rajendra Singh",
+        "dateIn": "2022-01-06T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11.09",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr3NFZj3KXCghMtUPx": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Usha Devi",
+        "dateIn": "2022-01-11T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.60",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr3WKYza6Kyie96Hap": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Mahesh Gujjar",
+        "dateIn": "2022-01-14T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10.05",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr3exPIT2-ut-dhCxh": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Sobhit Kumar",
+        "dateIn": "2022-01-23T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.10",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr3oWGOZ9_cZn6XRsp": {
+      "newAsset": {
+        "amount": "16000",
+        "customerName": "Amarjit Singh",
+        "dateIn": "2022-01-28T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.07",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "105"
+      }
+    },
+    "-NSr3x8K2BRWvkLK4n4Q": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Geeta",
+        "dateIn": "2022-02-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.7",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr454XGjLLmYzQCB0J": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Rahul Kumar",
+        "dateIn": "2022-02-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.53",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr4DQ4gpNP4cvNIf0w": {
+      "newAsset": {
+        "amount": "11000",
+        "customerName": "Simran",
+        "dateIn": "2022-02-15T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.04",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr4M2W-phq_jKSqun6": {
+      "newAsset": {
+        "amount": "50000",
+        "customerName": "Krishna Kashyap",
+        "dateIn": "2022-03-31T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10.82",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "341.8"
+      }
+    },
+    "-NSr4WYgTDJYd6UO8rSs": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Lokesh",
+        "dateIn": "2022-04-08T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.66",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr4ekRJs16pYJhPirP": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Meena",
+        "dateIn": "2022-04-10T20:09:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.32",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr4mRxxQ84gGB2qpjz": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Usha Devi",
+        "dateIn": "2022-04-20T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.37",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr4w1AZTQKrQVPUCr6": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Umashankar Sharma",
+        "dateIn": "2022-04-04T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.75",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr55-XVugnBjapMFmA": {
+      "newAsset": {
+        "amount": "200000",
+        "customerName": "Balaji Plywood",
+        "dateIn": "2022-05-18T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "49.45",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr5K7fuZzAayjOKLMz": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Sapna",
+        "dateIn": "2023-03-04T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.18",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": "50",
+        "silverWeight": "360"
+      }
+    },
+    "-NSr5UOi9Io49U0lo-Is": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Sandeep Kumar",
+        "dateIn": "2022-07-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11.83",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr5dn2npMLu5e4czBB": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Dr. Praveen",
+        "dateIn": "2022-07-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.04",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr5mD_XIR2B-8XBu8w": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Kapil Kumar",
+        "dateIn": "2022-07-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.136",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr5tLq7ywynM9FhgY2": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Sumit",
+        "dateIn": "2022-07-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10.56",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr609ZuR1DvJGCUewd": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Sarvesh",
+        "dateIn": "2022-07-09T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.32",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr68K7wCs7BdbZMBDw": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Priyanka Rani",
+        "dateIn": "2022-07-10T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.02",
+        "interest": 324.8,
+        "key": "-NSr68K7wCs7BdbZMBDw",
+        "rateofInterest": 1.4,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSr6Gw1f6r45OQJ8145": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Kalpana Thakur",
+        "dateIn": "2022-07-12T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "8.23",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr6QMUVGgCgp7GdMTM": {
+      "newAsset": {
+        "amount": "11500",
+        "customerName": "Nisha W/O Nazim",
+        "dateIn": "2022-07-14T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.9",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr6YhirXVjxpHsCwas": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Akash Thakur",
+        "dateIn": "2022-07-16T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "9.61",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr6hV1vC0RErUxaWTV": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Kalpana Thakur",
+        "dateIn": "2022-07-26T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "9.4",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr6oraIgMi7UGQI7df": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Narendra Singh",
+        "dateIn": "2022-07-26T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr6xzqWQOoPMvNLUuN": {
+      "newAsset": {
+        "amount": "37000",
+        "customerName": "Geeta Saini",
+        "dateIn": "2022-07-31T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "12.71",
+        "key": "",
+        "rateofInterest": 1.4,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr79QGPMuUnoruozyf": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Sanjeev",
+        "dateIn": "2022-08-10T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.48",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr7FhDKrHCpdxP7hbP": {
+      "newAsset": {
+        "amount": "37000",
+        "customerName": "Geeta Saini",
+        "dateIn": "2022-07-31T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "12.71",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSr7QRtVswhaxWWXbKY": {
+      "newAsset": {
+        "amount": "35000",
+        "customerName": "Sumit",
+        "dateIn": "2022-08-12T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "12.24",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr7YPW3Mcohooolk93": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Amarjit Singh",
+        "dateIn": "2022-08-24T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "9.89",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr7f0k-0LgeNM4iuye": {
+      "newAsset": {
+        "amount": "12000",
+        "customerName": "Mohan Singh",
+        "dateIn": "2022-08-24T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.5",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr7naChua1Mj7PYPvd": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Kajal",
+        "dateIn": "2022-04-25T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.46",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr7vOk4cj8P3FRnMlB": {
+      "newAsset": {
+        "amount": "11000",
+        "customerName": "Kapil Kumar",
+        "dateIn": "2022-08-25T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.96",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr858m3gOo-pXEOshQ": {
+      "newAsset": {
+        "amount": "25000",
+        "customerName": "Kishanpal Singh",
+        "dateIn": "2022-04-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "8.01",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr8CcaTfd_o5y_JADv": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Rakesh Singh",
+        "dateIn": "2022-04-06T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.03",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr8KvGu6Y0BqIqReHy": {
+      "newAsset": {
+        "amount": "70000",
+        "customerName": "Shakuntla Thakur",
+        "dateIn": "2022-09-06T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "24.61",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr8TlSJK-TxytXGCy7": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Pramodh Chaudhary",
+        "dateIn": "2022-09-07T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr8b42JBmGTFxc-mb9": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Teena Kaushik",
+        "dateIn": "2022-09-07T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.09",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr8ibp-ZedFr8Fk-K4": {
+      "newAsset": {
+        "amount": "17500",
+        "customerName": "Satendra Singh",
+        "dateIn": "2022-09-11T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.71",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr8rmCeYumVUx10Lga": {
+      "newAsset": {
+        "amount": "11000",
+        "customerName": "Kalpana Thakur",
+        "dateIn": "2022-09-15T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.35",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr8ziQTf_uNH31JWTU": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Bhanu Pratap",
+        "dateIn": "2022-09-21T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.6",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr98Sf6FEwANHOpqsI": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Savitri",
+        "dateIn": "2022-09-21T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.19",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr9GFwxhkujGUuimdL": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Sandeep Kumar",
+        "dateIn": "2022-09-24T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "8.93",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr9Nu3pZLdqdfVYqu_": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Veena Sharma",
+        "dateIn": "2022-09-25T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.6",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr9a1VYan5XIfBg7wp": {
+      "newAsset": {
+        "amount": "25000",
+        "customerName": "Vijendra Singh Tyagi",
+        "dateIn": "2022-09-27T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "8.37",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr9kuh64la27D861IC": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Seema",
+        "dateIn": "2022-10-02T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.04",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSr9rpvxc3m7JczHgcx": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Kumarpal",
+        "dateIn": "2022-10-05T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "1.89",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrA03Y-TF7ofbnqVTb": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Anil Saini",
+        "dateIn": "2022-10-06T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.74",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrA8E0fcbNSpeIJpL4": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Sumit",
+        "dateIn": "2022-10-11T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.9",
+        "interest": 1112.5,
+        "key": "-NSrA8E0fcbNSpeIJpL4",
+        "rateofInterest": 1.25,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSrAJIuzU_rPJ-Rj90n": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Chatrapal Singh",
+        "dateIn": "2022-10-13T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.18",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrARSLvAxK96fYSxSN": {
+      "newAsset": {
+        "amount": "11000",
+        "customerName": "Babita Tyagi",
+        "dateIn": "2022-10-14T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrAZIXg0A2tkkyWiau": {
+      "newAsset": {
+        "amount": "12000",
+        "customerName": "Luxmi",
+        "dateIn": "2022-10-14T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.14",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrAfnZR8Mw_IDPWPPQ": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Ganesh",
+        "dateIn": "2022-10-17T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.23",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrAoMqXHJxMN9_Bmx8": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Rajveer Singh",
+        "dateIn": "2022-10-29T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "9.8",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrB1m0wfyc5HKYGNDC": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Sobhit Kumar",
+        "dateIn": "2022-10-30T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.8",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrBC7wSaOt-iOBKIqL": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Kumarpal Singh",
+        "dateIn": "2022-11-04T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10.59",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrBJVMY2B2wP_o0830": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Sarvesh",
+        "dateIn": "2022-11-05T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.65",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrBSWamZbNtzpWR-dP": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Mamta Kashyap",
+        "dateIn": "2022-11-06T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.34",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrBfYyvXRw02CL9LQZ": {
+      "newAsset": {
+        "amount": "14000",
+        "customerName": "Meena Tiwari",
+        "dateIn": "2022-11-06T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.46",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrBnDWF6vgcZBXxDLY": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Lokesh",
+        "dateIn": "2022-11-08T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.51",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrC6dbfBYMU9Sp_5Di": {
+      "newAsset": {
+        "amount": "10500",
+        "customerName": "Sanjeev Kumar",
+        "dateIn": "2022-11-12T19:48:00.000Z",
+        "goldPercentage": "0",
+        "goldWeight": 0,
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "431"
+      }
+    },
+    "-NSrCVWOWb5YWhJzxiTw": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Manju Thakur",
+        "dateIn": "2022-11-13T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11.5",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrCdO3CfX9nWWoWyaR": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Nanhe Singh",
+        "dateIn": "2022-11-13T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.16",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrCofChu4NTkO3tpJm": {
+      "newAsset": {
+        "amount": "16000",
+        "customerName": "Sadhna Tomar",
+        "dateIn": "2022-11-15T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.2",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrCwydDVPuhDo_sIz7": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Sobhit Kumar",
+        "dateIn": "2022-11-15T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.77",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrD454zxxVintrroJN": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Anita",
+        "dateIn": "2022-11-19T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.99",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrDGV9X8FY_eMN1ltG": {
+      "newAsset": {
+        "amount": "36000",
+        "customerName": "Vinita Sharma",
+        "dateIn": "2022-11-26T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "9.7",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrDQsmNB2pnTPXCkAJ": {
+      "newAsset": {
+        "amount": "23000",
+        "customerName": "Meena",
+        "dateIn": "2022-11-19T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10.13",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrDZQ-RMEoiJWg_wDz": {
+      "newAsset": {
+        "amount": "24000",
+        "customerName": "Sadhana Tomar",
+        "dateIn": "2022-11-20T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "10.95",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrDjivdWSAP4wxz2cW": {
+      "newAsset": {
+        "amount": "18000",
+        "customerName": "Mamta Kashyap",
+        "dateIn": "2022-11-24T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.18",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrDxKWo_c1rAH-aDht": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Rakesh Diwakar",
+        "dateIn": "2022-11-26T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.5",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrE7JeiJDZiZUwFcpR": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Rajo",
+        "dateIn": "2022-11-29T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.27",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrEEa22Aii7jHIaPkm": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Sonu",
+        "dateIn": "2022-12-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.5",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrEMS0NevozLP3NKsz": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Sumit",
+        "dateIn": "2022-12-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.68",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrEUARi9UICQ9qdJp2": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Raanu Thakur",
+        "dateIn": "2022-12-02T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.49",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrEavU5Qcux4Cs9xLf": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Babbo",
+        "dateIn": "2022-12-10T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.5",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrEhxJaR7Gd1TQd9rF": {
+      "newAsset": {
+        "amount": "95000",
+        "customerName": "Sunil",
+        "dateIn": "2022-12-10T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "33.2",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrErOAvF22urlrz7Vl": {
+      "newAsset": {
+        "amount": "71300",
+        "customerName": "Rishipal Singh",
+        "dateIn": "2022-12-11T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "23.71",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrEy23SmHwQeb-2eU6": {
+      "newAsset": {
+        "amount": "9000",
+        "customerName": "Sanjog",
+        "dateIn": "2022-12-11T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.28",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrF4d0GRJlBz-4rtEA": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Morkali",
+        "dateIn": "2022-12-13T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "16.08",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrFE4DU3pvgLFRzYNc": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Sobhit",
+        "dateIn": "2022-12-13T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "8.12",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrFLx_BOO8xfY2y5Pu": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Manorma Yadav",
+        "dateIn": "2022-12-16T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.47",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrFVy5HmtHmLeg6GzV": {
+      "newAsset": {
+        "amount": "50000",
+        "customerName": "Thakur Rakesh Singh",
+        "dateIn": "2022-12-18T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "15.21",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrFeikBQiW-6XI0X2p": {
+      "newAsset": {
+        "amount": "100000",
+        "customerName": "Siaram Sharma",
+        "dateIn": "2022-12-19T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "34.8",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrFssNP4xe8K6FUpeX": {
+      "newAsset": {
+        "amount": "100000",
+        "customerName": "Sarthak Nagpal",
+        "dateIn": "2022-12-19T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "28.6",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrFzraNaPBevws_KyA": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Dr Praveen",
+        "dateIn": "2022-12-30T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "15.26",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrG6lP4LvU-U6Kd2pI": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Lokesh",
+        "dateIn": "2022-12-30T20:59:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "11.5",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrGHOCVli5HoF4YqGH": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Sobha",
+        "dateIn": "2023-01-01T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.88",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrGNPAV8159FdX8Vgc": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Lokesh",
+        "dateIn": "2023-01-03T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.72",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrGY0e4cdiJF4oOs9T": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Shivautar Singh",
+        "dateIn": "2023-01-05T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "9.28",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrGeHIfd-2PGx5za_R": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Vineet Bhatnagar",
+        "dateIn": "2023-01-06T19:48:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.55",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrGqI8cMRaED6sL0ls": {
+      "newAsset": {
+        "amount": "50000",
+        "customerName": "Vijendra Singh",
+        "dateIn": "2023-01-07T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "16.2",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrGwZoZzdbM58Ol_Kf": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Rajkumar",
+        "dateIn": "2023-01-08T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.95",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrH5YCb49w0SNCWzQF": {
+      "newAsset": {
+        "amount": "12000",
+        "customerName": "Vishnu Sharma",
+        "dateIn": "2023-01-11T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.35",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrHCHrbuUUiNQVhvGh": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Gautam",
+        "dateIn": "2023-01-12T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "1.97",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrHNeS7rlsPBn4_f0o": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Vishal Kashyap",
+        "dateIn": "2023-01-14T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "52.6"
+      }
+    },
+    "-NSrHW3VJra6qsDsGBeV": {
+      "newAsset": {
+        "amount": "11000",
+        "customerName": "Sanjeev",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.55",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "125"
+      }
+    },
+    "-NSrHc0gluEnCx0U7In1": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Ajab Singh",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.68",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrHi5blgTYPwon3JiW": {
+      "newAsset": {
+        "amount": "5500",
+        "customerName": "Chameli",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "1.91",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrHs7i1Ri6J5Ya13_Q": {
+      "newAsset": {
+        "amount": "11000",
+        "customerName": "Satendra Sharma",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.14",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrHymPiN7BpXYrsW8X": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Preeti Kashyap",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.65",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrI4kcTaqS_plT8mSb": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Lokesh",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.13",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrIEpBPs8SiShUBwWn": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Veena Sharma",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.55",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrIOUXsVKBXEg5lON0": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Sobhit kumar",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.55",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrIVTaPdEWZnQ0Yj9_": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Usha Saini",
+        "dateIn": "2023-01-17T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.56",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrIbrhJrtnV1nrs8wy": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Manoj Kumar",
+        "dateIn": "2023-01-26T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "6.16",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrIiIVmhUX4Cm1f5CT": {
+      "newAsset": {
+        "amount": "12000",
+        "customerName": "Mitrapal",
+        "dateIn": "2023-01-28T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.02",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrIrCaaaiHnmpXXou3": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Rakkumar Kashyap",
+        "dateIn": "2023-01-28T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "1.97",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrIyNSYW-llU57oOPm": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Poonam Thakur",
+        "dateIn": "2023-01-31T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.02",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrJAQvFgjPzaOrGR9U": {
+      "newAsset": {
+        "amount": "300000",
+        "customerName": "Dimpal",
+        "dateIn": "2023-02-02T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "73.33",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrJIgM3Y3cpjKDmfi8": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Rajendra Singh",
+        "dateIn": "2023-02-02T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.84",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrJPxZqrf-miDCQh1C": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Rajendra Singh",
+        "dateIn": "2023-02-02T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.11",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrJWBZizJwx2x3Fv74": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Rishipal Singh",
+        "dateIn": "2023-02-07T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.74",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrJdj4FdCBIY9DaLC0": {
+      "newAsset": {
+        "amount": "200000",
+        "customerName": "Dimpal",
+        "dateIn": "2023-02-08T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "73.14",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrJpwCArBleao23zt-": {
+      "newAsset": {
+        "amount": "100000",
+        "customerName": "Arvind Kumar Saini",
+        "dateIn": "2023-02-12T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "28.29",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "249.29"
+      }
+    },
+    "-NSrJx-uGQLgy8jMlZ7I": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Mamta Thakur",
+        "dateIn": "2023-02-13T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrK4y5Np-EomWj5XAh": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Mahesh Gujjar",
+        "dateIn": "2023-02-15T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.02",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrKBWAOkBaQGvK7sen": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Manju Sharma",
+        "dateIn": "2023-02-19T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrKKpycG4FFT8wCzMd": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Rajesh Kumar saini",
+        "dateIn": "2023-02-19T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.25",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrKUstOc_tTOspJK7i": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Arun Kumar Saini",
+        "dateIn": "2023-02-21T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "14.4",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrKb6DpHaiSsBKTY00": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Arun Kumar Saini",
+        "dateIn": "2023-02-21T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "13.34",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrKi8lpMr6QviMbeYG": {
+      "newAsset": {
+        "amount": "13000",
+        "customerName": "Subham Saxena",
+        "dateIn": "2023-02-23T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.19",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrKpw3vTAoD6sUEF33": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Rishipal Singh",
+        "dateIn": "2023-02-23T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.05",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrKwXlP8Pd70lMe0R_": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Alka Saini",
+        "dateIn": "2023-02-26T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.82",
+        "interest": 108.33,
+        "key": "-NSrKwXlP8Pd70lMe0R_",
+        "rateofInterest": 1.25,
+        "silverPercentage": 1,
+        "silverWeight": 0
+      }
+    },
+    "-NSrL3hdJ9kFl6vjJ6K7": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Monu Painter",
+        "dateIn": "2023-02-27T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.83",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "194"
+      }
+    },
+    "-NSrLCDEkptZY0LDNZYj": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Chandrabhan Sharma",
+        "dateIn": "2023-02-28T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.43",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrLInvcDNwDCWMkptx": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Bholi Sharma",
+        "dateIn": "2023-03-01T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.03",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrLRWqLbTT52YK7hwT": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Vinod Thakur",
+        "dateIn": "2023-03-02T21:02:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "9.87",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrLbs5ZM7-roTOzArr": {
+      "newAsset": {
+        "amount": "25000",
+        "customerName": "Rishipal Singh",
+        "dateIn": "2023-03-03T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "7.29",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrLnzl3uAhgyEIG_2Q": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Monu Painter",
+        "dateIn": "2023-03-03T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.10",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "183"
+      }
+    },
+    "-NSrM-eP-43VrZR98B39": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Tejram s/o Laalmal",
+        "dateIn": "2023-03-05T21:23:00.000Z",
+        "goldPercentage": 0,
+        "goldWeight": "",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "246"
+      }
+    },
+    "-NSrM7mdVSZ0U4KwaIf8": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Gopal Halwai",
+        "dateIn": "2023-03-09T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.1",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrMKfEICea-EVXajqY": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Buvnesh Kumar",
+        "dateIn": "2023-03-12T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrMT_NwFvdcpX3N3AU": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Syamkali",
+        "dateIn": "2023-03-15T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.69",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrM_n-ChbdBhbowx02": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Mahesh Gujjar",
+        "dateIn": "2023-03-15T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.12",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrMih7w0SjeC_pIuoQ": {
+      "newAsset": {
+        "amount": "40000",
+        "customerName": "Anju",
+        "dateIn": "2023-03-18T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "8.66",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "173.66"
+      }
+    },
+    "-NSrMp7vXoNhAUfnNJ1p": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Monti",
+        "dateIn": "2023-03-18T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.6",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrMuqPK4nQzHfjgFui": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Neetu",
+        "dateIn": "2023-03-18T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.46",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrN2uVFF6cyjLpBXdJ": {
+      "newAsset": {
+        "amount": "20000",
+        "customerName": "Ramesh",
+        "dateIn": "2023-03-18T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.68",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "243"
+      }
+    },
+    "-NSrNA-aRmStprCS9VMN": {
+      "newAsset": {
+        "amount": "5000",
+        "customerName": "Rajesh Kumar Saini",
+        "dateIn": "2023-03-19T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.63",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrNHiWT7Zzj8exf4Dl": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Geeta w/o Ajay tomar",
+        "dateIn": "2023-03-22T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.82",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrNNn72nQRcH_7s175": {
+      "newAsset": {
+        "amount": "7000",
+        "customerName": "Preeti Kashyap",
+        "dateIn": "2023-03-22T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrNU3oYC6gp7xSNMcE": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Mohan",
+        "dateIn": "2023-03-22T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.75",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrNZtzQkM2POFKqRzH": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Pooja Verma",
+        "dateIn": "2023-03-23T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "4.9",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrNgWySaRgkAPrRPKo": {
+      "newAsset": {
+        "amount": "30000",
+        "customerName": "Avnish Kumar Sharma",
+        "dateIn": "2023-03-24T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "5.79",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrNnhYVT5mms9TMX6z": {
+      "newAsset": {
+        "amount": "70000",
+        "customerName": "Mahesh Gujjar",
+        "dateIn": "2023-03-25T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "20.17",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrNuqa8S_lsvwIZclD": {
+      "newAsset": {
+        "amount": "6000",
+        "customerName": "Layeek Varsi",
+        "dateIn": "2023-04-02T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "218",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrO4y5CClKDQSCIabb": {
+      "newAsset": {
+        "amount": "15000",
+        "customerName": "Chaman Singh",
+        "dateIn": "2023-04-02T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "2.7",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "177"
+      }
+    },
+    "-NSrOEGoq6eYgC3KXcL8": {
+      "newAsset": {
+        "amount": "50000",
+        "customerName": "Mahesh Gujjar",
+        "dateIn": "2023-04-02T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "12.22",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrOKOM1Iq9Rqm4j7V4": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Monu Kumar",
+        "dateIn": "2023-04-02T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.12",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    },
+    "-NSrOV8WcClm3JQdiv_o": {
+      "newAsset": {
+        "amount": "8000",
+        "customerName": "Poonam Chauhan",
+        "dateIn": "2023-04-02T21:23:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.59",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "105"
+      }
+    },
+    "-NSrOdFBwpwY6TVc23Jf": {
+      "newAsset": {
+        "amount": "22000",
+        "customerName": "Avnish Kumar Sharma",
+        "dateIn": "2023-04-09T21:36:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.16",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": "50",
+        "silverWeight": "206"
+      }
+    },
+    "-NSrOjK0FzvxTjOG8Fau": {
+      "newAsset": {
+        "amount": "10000",
+        "customerName": "Amit Bhatnagar",
+        "dateIn": "2023-04-09T21:36:00.000Z",
+        "goldPercentage": "70",
+        "goldWeight": "3.64",
+        "key": "",
+        "rateofInterest": 1.25,
+        "silverPercentage": 0,
+        "silverWeight": 0
+      }
+    }
+  },
+  "rates": {
+    "goldRates": 5000,
+    "silverRates": 50
+  }
+}
